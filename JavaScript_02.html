@@ -23,10 +23,10 @@
                     <input type='text' name='apellido1'> <br/>
                     <input type='text' name='apellido2'> <br/>
 
-                    <select name="anio" onclick="cargarAño()"> <!-- Los años se cargan con javascript y jquery -->
+                    <select class="anio" name="anio" onclick="cargarAño()"> <!-- Los años se cargan con javascript y jquery -->
                     </select>
              
-                    <select name="mes">
+                    <select class="mes" name="mes">
                         <option value="1">Enero</option>
                         <option value="2">Febrero</option>
                         <option value="3">Marzo</option>
@@ -41,16 +41,15 @@
                         <option value="12">Diciembre</option>
                     </select>
              
-                    <select name="dia"> <!-- Los años se cargan con javascript y jquery -->
+                    <select class="dia" name="dia"> <!-- Los años se cargan con javascript y jquery -->
                     </select>
                   </div>
-                  <div class="column3">
-                    <br/>
+                  <div class="col3">
                     <label for="fDni">DNI</label> <br/>
                   </div>
-                  <div class="column4">
-                    <input type='text' name='NumDni'> <br/>
-                    <input type='text' name='LetraDni'> <br/>
+                  <div class="col4">
+                    <input  type='text' name='NumDni'>
+                    <input class="LetraDni" type='text' name='LetraDni'> <br/>
                   </div>
               </div>
           </fieldset>
