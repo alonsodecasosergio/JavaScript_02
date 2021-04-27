@@ -74,3 +74,28 @@ function calcularDiasMes(anio, mes) {
 
     return numeroDias;
 }
+
+function validarDNI(){
+
+    var dni = document.getElementById("NumDni").value;
+    var letra = document.getElementById("LetraDni").value;
+
+    var valoresAceptados = /^[0-9]+$/;
+
+    if(dni.length == 8 && dni.match(valoresAceptados)){
+        
+        var result = dni % 23;
+        var cadena = "TRWAGMYFPDXBNJZSQVHLCKET";
+        var letraBuena = cadena.substring(result,result+1);
+
+        if(letra === letraBuena){
+            alert("El DNI es correcto");
+        }else{
+            alert("La letra del DNI no es correcta");
+        }
+
+    }else{
+        alert("El DNI no es correcto");
+    }
+}
+

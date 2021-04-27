@@ -8,7 +8,7 @@
   <body onload="cargarDatos()">
       <h1>Curso Serbatic</h1>
       <h2>Formulario de registro</h2>
-      <form>
+      <form onsubmit="validarDNI()">
           <fieldset>
               <legend>DATOS PERSONALES</legend>
               <div class="row">
@@ -49,8 +49,8 @@
                     <label for="fDni">DNI</label> <br/>
                   </div>
                   <div class="col4">
-                    <input  type='text' name='NumDni'>
-                    <input class="LetraDni" type='text' name='LetraDni'> <br/>
+                    <input id="NumDni" type='text' name='NumDni'>
+                    <input id="LetraDni" class="LetraDni" type='text' name='LetraDni'> <br/>
                   </div>
               </div>
           </fieldset>
@@ -104,7 +104,7 @@
                 </div>
                 <div class="column4">
                   <br/>
-                  <input type='text' name='codPost' required pattern="[0123456789]{5}"  title="Solo puede introducir numeros y 5 digitos"> <br/>
+                  <input type='text' name='codPost' title="Solo puede introducir numeros y 5 digitos"> <br/>
                   <select required name="provincia" class="form-control">
                     <option value="">Elige Provincia</option>
                     <option value="Álava/Araba">Álava/Araba</option>
@@ -173,8 +173,8 @@
                   <label for="fMail">e-mail</label> <br/>
                 </div>
                 <div class="columnDer">
-                  <input type='text' name='telefono' required pattern="[0123456789]{9}" title="Solo puede introducir numeros y 9 digitos"> <br/>
-                  <input type='text' name='movil' required pattern="[0123456789]{9}"  title="Solo puede introducir numeros y 9 digitos"> <br/>
+                  <input type='text' name='telefono'  title="Solo puede introducir numeros y 9 digitos"> <br/>
+                  <input type='text' name='movil'  title="Solo puede introducir numeros y 9 digitos"> <br/>
                   <input type='email' name='mail'>
                 </div>
             </div>
