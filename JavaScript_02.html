@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel=StyleSheet href="style.css" type="text/css" medias=screen>
+    <meta charset="utf-8">
+    <title>Formulario | Sergio Alonso de Caso</title>
+  </head>
+  <body>
+      <h1>Curso Serbatic</h1>
+      <h2>Formulario de registro</h2>
+      <form>
+          <fieldset>
+              <legend>DATOS PERSONALES</legend>
+              <div class="row">
+                  <div class="columnIzq">
+                    <label for="fnombre">Nombre</label> <br/>
+                    <label for="fap1">Primer Apellido</label> <br/>
+                    <label for="fap2">Segundo Apellido</label> <br/>
+                    <label for="fdate">Fecha de nacimiento</label> <br/>
+                  </div>
+                  <div class="columnDer">
+                    <input type='text' name='nombre'> <br/>
+                    <input type='text' name='apellido1'> <br/>
+                    <input type='text' name='apellido2'> <br/>
+
+                    <select name="anio" onclick="cargarAño()"> <!-- Los años se cargan con javascript y jquery -->
+                    </select>
+             
+                    <select name="mes">
+                        <option value="1">Enero</option>
+                        <option value="2">Febrero</option>
+                        <option value="3">Marzo</option>
+                        <option value="4">Abril</option>
+                        <option value="5">Mayo</option>
+                        <option value="6">Junio</option>
+                        <option value="7">Julio</option>
+                        <option value="8">Agosto</option>
+                        <option value="9">Septiembre</option>
+                        <option value="10">Octubre</option>
+                        <option value="11">Noviembre</option>
+                        <option value="12">Diciembre</option>
+                    </select>
+             
+                    <select name="dia"> <!-- Los años se cargan con javascript y jquery -->
+                    </select>
+                  </div>
+              </div>
+          </fieldset>
+
+          <fieldset>
+              <legend>DOMICILIO</legend>
+              <div class="row2">
+                <div class="column1">
+                  <label for="fPas">Pais</label> <br/>
+                  <label for="fDir">Dirección</label> <br/>
+                  <label for="fap2">Localidad</label> <br/>
+                </div>
+                <div class="column2">
+                  <select required name="pais" class="form-control">
+                    <option value="">Elige Pais</option>
+                    <option value="ALEMANIA">ALEMANIA</option>
+                    <option value="AUSTRIA">AUSTRIA</option>
+                    <option value="BÉLGICA">BÉLGICA</option>
+                    <option value="BULGARIA">BULGARIA</option>
+                    <option value="CHIPRE">CHIPRE</option>
+                    <option value="CROACIA">CROACIA</option>
+                    <option value="DINAMARCA">DINAMARCA</option>
+                    <option value="ESLOVENIA">ESLOVENIA</option>
+                    <option value="ESPAÑA">ESPAÑA</option>
+                    <option value="ESTONIA">ESTONIA</option>
+                    <option value="FINLANDIA">FINLANDIA</option>
+                    <option value="FRANCIA">FRANCIA</option>
+                    <option value="GRECIA">GRECIA</option>
+                    <option value="HUNGRÍA">HUNGRÍA</option>
+                    <option value="IRLANDA">IRLANDA</option>
+                    <option value="ITALIA">ITALIA</option>
+                    <option value="LETONIA">LETONIA</option>
+                    <option value="LITUANIA">LITUANIA</option>
+                    <option value="LUXEMBURGO">LUXEMBURGO</option>
+                    <option value="MALTA">MALTA</option>
+                    <option value="PAÍSES BAJOS">PAÍSES BAJOS</option>
+                    <option value="POLONIA">POLONIA</option>
+                    <option value="PORTUGAL">PORTUGAL</option>
+                    <option value="REPÚBLICA CHECA">REPÚBLICA CHECA</option>
+                    <option value="REPÚBLICA ESLOVACA">REPÚBLICA ESLOVACA</option>
+                    <option value="RUMANÍA">RUMANÍA</option>
+                    <option value="SUECIA">SUECIA</option>
+                </select> <br/>
+                  <input type='text' name='direccion'> <br/>
+                  <input type='text' name='localidad'>
+                </div>
+                <div class="column3">
+                  <br/>
+                  <label for="fPost">Código Postal</label> <br/>
+                  <label for="fPro">Provincia</label>
+                </div>
+                <div class="column4">
+                  <br/>
+                  <input type='text' name='codPost' required pattern="[0123456789]{5}"  title="Solo puede introducir numeros y 5 digitos"> <br/>
+                  <select required name="provincia" class="form-control">
+                    <option value="">Elige Provincia</option>
+                    <option value="Álava/Araba">Álava/Araba</option>
+                    <option value="Albacete">Albacete</option>
+                    <option value="Alicante">Alicante</option>
+                    <option value="Almería">Almería</option>
+                    <option value="Asturias">Asturias</option>
+                    <option value="Ávila">Ávila</option>
+                    <option value="Badajoz">Badajoz</option>
+                    <option value="Baleares">Baleares</option>
+                    <option value="Barcelona">Barcelona</option>
+                    <option value="Burgos">Burgos</option>
+                    <option value="Cáceres">Cáceres</option>
+                    <option value="Cádiz">Cádiz</option>
+                    <option value="Cantabria">Cantabria</option>
+                    <option value="Castellón">Castellón</option>
+                    <option value="Ceuta">Ceuta</option>
+                    <option value="Ciudad Real">Ciudad Real</option>
+                    <option value="Córdoba">Córdoba</option>
+                    <option value="Cuenca">Cuenca</option>
+                    <option value="Gerona/Girona">Gerona/Girona</option>
+                    <option value="Granada">Granada</option>
+                    <option value="Guadalajara">Guadalajara</option>
+                    <option value="Guipúzcoa/Gipuzkoa">Guipúzcoa/Gipuzkoa</option>
+                    <option value="Huelva">Huelva</option>
+                    <option value="Huesca">Huesca</option>
+                    <option value="Jaén">Jaén</option>
+                    <option value="La Coruña/A Coruña">La Coruña/A Coruña</option>
+                    <option value="La Rioja">La Rioja</option>
+                    <option value="Las Palmas">Las Palmas</option>
+                    <option value="León">León</option>
+                    <option value="Lérida/Lleida">Lérida/Lleida</option>
+                    <option value="Lugo">Lugo</option>
+                    <option value="Madrid">Madrid</option>
+                    <option value="Málaga">Málaga</option>
+                    <option value="Melilla">Melilla</option>
+                    <option value="Murcia">Murcia</option>
+                    <option value="Navarra">Navarra</option>
+                    <option value="Orense/Ourense">Orense/Ourense</option>
+                    <option value="Palencia">Palencia</option>
+                    <option value="Pontevedra">Pontevedra</option>
+                    <option value="Salamanca">Salamanca</option>
+                    <option value="Segovia">Segovia</option>
+                    <option value="Sevilla">Sevilla</option>
+                    <option value="Soria">Soria</option>
+                    <option value="Tarragona">Tarragona</option>
+                    <option value="Tenerife">Tenerife</option>
+                    <option value="Teruel">Teruel</option>
+                    <option value="Toledo">Toledo</option>
+                    <option value="Valencia">Valencia</option>
+                    <option value="Valladolid">Valladolid</option>
+                    <option value="Vizcaya/Bizkaia">Vizcaya/Bizkaia</option>
+                    <option value="Zamora">Zamora</option>
+                    <option value="Zaragoza">Zaragoza</option>
+                  </select>
+                </div>
+              </div>       
+          </fieldset>
+
+          <fieldset>
+              <legend>DATOS DE CONTACTO</legend>
+              <div class="row">
+                <div class="columnIzq">
+                  <label for="fTelf">Teléfono</label> <br/>
+                  <label for="fMov">Móvil</label> <br/>
+                  <label for="fMail">e-mail</label> <br/>
+                </div>
+                <div class="columnDer">
+                  <input type='text' name='telefono' required pattern="[0123456789]{9}" title="Solo puede introducir numeros y 9 digitos"> <br/>
+                  <input type='text' name='movil' required pattern="[0123456789]{9}"  title="Solo puede introducir numeros y 9 digitos"> <br/>
+                  <input type='email' name='mail'>
+                </div>
+            </div>
+          </fieldset>
+
+          <div class="botones">
+            <input type="checkbox" id="cbox2" value="checkbox"><label for="cbox2">Acepto el acuerdo de servicios, la declaración de privacidad y la declaración de uso de cookies</label><br/>
+            <input type="submit" id="boton" value="Registrar" />
+            <input type="reset"id="boton" value="Limpiar" />
+          </div>
+        </form>
+
+        <script src="script.js">
+
+            
+        </script>
+  </body>
+</html>

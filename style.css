@@ -1,0 +1,98 @@
+body{
+    font-family: Calibri;
+    font-weight: bold;
+}
+
+h1{
+    color:#B72304;
+    font-family: Segoe UI, Segoe, Optima, Candara, Calibri,Arial, sans-serif;
+    font-size: 3em;
+    letter-spacing: 0.3em;
+    word-spacing: 1.0em;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+fieldset{
+    border-color: darkblue;
+    border-width: 3px;
+    border-radius: 24px;
+}
+
+legend{
+    color: orange;
+}
+
+
+input:focus {
+    background-color: #FEF9E7;
+}
+
+input:hover{
+    border-width: 2px;
+}
+input{
+    border-width: 1px;
+}
+
+#cbox2{
+    text-align: center;
+}
+
+.botones{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.row{
+    width: 25%;
+}
+
+.columnIzq{
+    float: left;
+    width: 50%;
+    line-height: 25px;
+}
+
+.columnDer{
+    float: right;
+    width: 50%;
+    line-height: 25px;
+}
+
+.row2{
+    width: 80%;
+}
+
+.column1{
+    float: left;
+    width: 10%;
+    line-height: 35px;
+}
+.column2 > input, select {
+    width: 90%;
+}
+
+.column2{
+    float: left;
+    width: 25%;
+    line-height: 35px;
+}
+.column3{
+    float: left;
+    width: 15%;
+    line-height: 35px;
+}
+.column4{
+    float: left;
+    width: 15%;
+    line-height: 35px;
+}
+
+#boton{
+    height: 35px;
+    margin: 10px;
+}
