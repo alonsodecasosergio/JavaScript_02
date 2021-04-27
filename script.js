@@ -1,11 +1,11 @@
-function cargarAño(){
+function cargarAnio(){
 
-    var option = document.createElement('option');
-    var select = document.getElementById('anio');
+    var select = document.getElementsByName("anio");
 
-    for(let step = 1900; step < 2021; step++){
-        option.value = step;
-        option.text = step;
-        select.appendChild(option);
-    }
+    for (var i = 1900; i < 2022; i++) {
+        
+        var option = document.createElement("option");
+        option.innerHTML = i;
+        select[0].appendChild(option);
+    }    
 }

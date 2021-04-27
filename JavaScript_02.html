@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>Formulario | Sergio Alonso de Caso</title>
   </head>
-  <body>
+  <body onload="cargarAnio()">
       <h1>Curso Serbatic</h1>
       <h2>Formulario de registro</h2>
       <form>
@@ -23,7 +23,7 @@
                     <input type='text' name='apellido1'> <br/>
                     <input type='text' name='apellido2'> <br/>
 
-                    <select class="anio" name="anio" onclick="cargarAño()"> <!-- Los años se cargan con javascript y jquery -->
+                    <select class="dia" name="dia"> <!-- Los años se cargan con javascript-->
                     </select>
              
                     <select class="mes" name="mes">
@@ -40,9 +40,10 @@
                         <option value="11">Noviembre</option>
                         <option value="12">Diciembre</option>
                     </select>
-             
-                    <select class="dia" name="dia"> <!-- Los años se cargan con javascript y jquery -->
+                    <select class="anio"  name="anio"> <!-- Los años se cargan con javascript -->
                     </select>
+
+
                   </div>
                   <div class="col3">
                     <label for="fDni">DNI</label> <br/>
@@ -187,8 +188,6 @@
         </form>
 
         <script src="script.js">
-
-            
         </script>
   </body>
 </html>
