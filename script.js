@@ -75,6 +75,29 @@ function calcularDiasMes(anio, mes) {
     return numeroDias;
 }
 
+function validarDatos(){
+
+    if(validarDNI() && validarCajas() && validarCheck()){
+        alert("Los datos han sido enviados");
+    }else{
+        alert("Hay campos que no son correctos");
+    }
+}
+
+function validarCheck(){
+
+    var check = document.getElementById("cbox2").checked;
+
+    if(check){
+
+        return true;
+
+    }else{
+        alert("Marque la casilla de aceptación");
+        return false;
+    }
+}
+
 function validarDNI(){
 
     var dni = document.getElementById("NumDni").value;
@@ -89,13 +112,42 @@ function validarDNI(){
         var letraBuena = cadena.substring(result,result+1);
 
         if(letra === letraBuena){
-            alert("El DNI es correcto");
+            return true;
         }else{
             alert("La letra del DNI no es correcta");
+            return false;
         }
 
     }else{
         alert("El DNI no es correcto");
+        return false;
     }
+}
+
+function validarCajas(){
+
+    var telefono = document.getElementById("telefono").value;
+    var movil = document.getElementById("movil").value;
+    var codigoPostal = document.getElementById("codigoPostal").value;
+
+    var valoresAceptados = /^[0-9]+$/;
+
+    if(telefono.length != 9 || !telefono.match(valoresAceptados)){
+
+        return false;
+    }
+
+    if(movil.length != 9 || !movil.match(valoresAceptados)){
+
+        return false;
+    }
+
+    if(codigoPostal.length != 5 || !codigoPostal.match(valoresAceptados)){
+
+        return false;
+    }
+
+    return true;
+
 }
 

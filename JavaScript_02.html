@@ -8,7 +8,7 @@
   <body onload="cargarDatos()">
       <h1>Curso Serbatic</h1>
       <h2>Formulario de registro</h2>
-      <form onsubmit="validarDNI()">
+      <form onsubmit="validarDatos()">
           <fieldset>
               <legend>DATOS PERSONALES</legend>
               <div class="row">
@@ -104,7 +104,7 @@
                 </div>
                 <div class="column4">
                   <br/>
-                  <input type='text' name='codPost' title="Solo puede introducir numeros y 5 digitos"> <br/>
+                  <input type='text' id="codigoPostal" name='codPost' title="Solo puede introducir numeros y 5 digitos"> <br/>
                   <select required name="provincia" class="form-control">
                     <option value="">Elige Provincia</option>
                     <option value="Álava/Araba">Álava/Araba</option>
@@ -173,8 +173,8 @@
                   <label for="fMail">e-mail</label> <br/>
                 </div>
                 <div class="columnDer">
-                  <input type='text' name='telefono'  title="Solo puede introducir numeros y 9 digitos"> <br/>
-                  <input type='text' name='movil'  title="Solo puede introducir numeros y 9 digitos"> <br/>
+                  <input type='text' id="telefono" name='telefono'  title="Solo puede introducir numeros y 9 digitos"> <br/>
+                  <input type='text' id="movil" name='movil'  title="Solo puede introducir numeros y 9 digitos"> <br/>
                   <input type='email' name='mail'>
                 </div>
             </div>
